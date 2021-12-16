@@ -5,9 +5,10 @@
 }
 
 :root {
-  --color-primery: #ff5400;
   font-family: 'Montserrat', sans-serif; 
-  font-size: 16px; 
+  font-size: 14px;
+  --color-primery: #ff5400;
+  --default-padding: 1rem;
 }
 
 body{
@@ -22,9 +23,9 @@ ul{
 
 }
 
-
 .navbar{
     position: fixed;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
@@ -73,4 +74,65 @@ ul{
 
 .copy--primery{
     color: var(--color-primery);
+}
+
+#slider {
+    background: #000814 ;
+    color: #f6f6f6;
+}
+
+.slide{
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+}
+
+.slide__copy h6 {
+    font-size: .9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+}
+
+.slide__copy h2{
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slide__copy h2 span{
+    display: block;
+}
+
+.btn{
+    cursor: pointer;
+   padding: 1rem 2.5rem;
+   border: .125rem solid #f6f6f6;
+   border-radius: 5rem;
+   color: var(--color-primery);
+   background: unset;
+   font-size: .9375rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   transition: 0.25s all ease;
+}
+
+.btn:hover, 
+.btn:active, 
+.btn:focus {
+    border-color: var(--color-primery);
+    background-color: var(--color-primery);
+    color: #f6f6f6
 }
