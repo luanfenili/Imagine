@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto&display=swap');
 
 *{
     box-sizing: border-box;
@@ -6,38 +6,54 @@
 
 :root {
   font-family: 'Montserrat', sans-serif; 
-  font-size: 14px;
+  font-size: 16px;
   --color-primery: #ff5400;
+  --color-copy:#333 
   --default-padding: 1rem;
+  color: var(--color-copy)
 }
 
 body{
   margin: 0;
-  padding-top: 7.75rem;  
+  padding-top: 7.75rem; 
+}
+
+header,
+main,
+footer {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width:1140px;
+    margin: 0 auto;
 }
 
 ul{
     display: flex;
     list-style: none;
-    padding-left: 0%;
-
+    padding-left: 0;
 }
 
 .navbar{
     position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #000814;/*Não é preto*/
+    color: #f6f6f6;
+}
+
+.navbar__container {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    top: 0;
-    left: 0;
     
     width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
     
-    background-color: #000814;/*Não é preto*/
-    color: #f6f6f6;
 }
 .navbar__links{
     justify-self: end;
@@ -83,7 +99,7 @@ ul{
 
 .slide{
     position: relative;
-    height: calc(100vh - 7.75rem);
+    height: calc(90vh - 7.75rem);
 }
 
 .slide__background-image {
@@ -100,13 +116,16 @@ ul{
 }
 
 .slide__copy h6 {
+    margin: 0;
     font-size: .9375rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .1875rem;
+    line-height: 3rem;
 }
 
 .slide__copy h2{
+    margin: 1rem;
     font-size: 6.25rem;
     text-transform: uppercase;
     line-height: 6.25rem;
@@ -117,22 +136,88 @@ ul{
 }
 
 .btn{
-    cursor: pointer;
-   padding: 1rem 2.5rem;
-   border: .125rem solid #f6f6f6;
-   border-radius: 5rem;
-   color: var(--color-primery);
-   background: unset;
-   font-size: .9375rem;
-   font-weight: 700;
-   text-transform: uppercase;
-   transition: 0.25s all ease;
+  cursor: pointer;
+  padding: 1.25rem 2.5rem;
+  border: 0.125rem solid #f6f6f6;
+  border-radius: 5rem;
+  color: var(--color-primary);
+  background: unset;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
 }
 
 .btn:hover, 
 .btn:active, 
-.btn:focus {
+.btn:focus,
+.btn--institutional {
     border-color: var(--color-primery);
     background-color: var(--color-primery);
     color: #f6f6f6
+}
+
+#counter {
+    background-color:var(--color-primery);
+    color: #f6f6f6 ;
+    text-transform: uppercase;
+}
+
+.counter__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+    padding: 4.375rem 1rem;
+}
+
+.counter__container h3 {
+    font-size: 2.1875rem;
+}
+
+.counter__container h3 small {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.institutional {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem;
+    align-items: center;
+    padding: 4.375rem;
+}
+
+.institutional__image {
+    max-width: 550px;
+}
+
+.institutional__copy {
+    padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+    font-size: .875rem;
+    font-weight: 300;
+    letter-spacing: .0625rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.institutional__copy h4 {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+} 
+
+.institutional p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
+    box-shadow: 0 1rem 1rem #000814
 }

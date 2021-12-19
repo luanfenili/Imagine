@@ -2,15 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Studion</title>
 </head>
+
 <body>
     <nav class="navbar">
+    <div class="container navbar__container">
         <h1 class="logo-studion">
-            Studi<Span class="copy--primery">on</Span> <span class="logo-studion__subtitle">Eventos</span></h1>
+            Studi<Span class="copy--primery">on</Span> 
+            <span class="logo-studion__subtitle">Eventos</span>
+        </h1>
         <ul class="navbar__links">
             <li>
                 <a href="#empresa">
@@ -38,14 +41,21 @@
                 </a>
             </li>  
         </ul>
+    </div>
     </nav>
 
     <header>
         <div id="slider">
             <div class="slide">
-                <img class= "slide__background-image"src="./imagens/banner.jpg" alt="Stuion Banner">
+                <img 
+                     class= "slide__background-image"
+                     src="./imagens/banner.jpg" 
+                     alt="Stuion Banner"
+                />
                 <div class="slide__copy">
-                    <h6><span class="copy--primery">Próximo evento</span>- Dia 25 de Setembro ás 19h</h6>
+                    <h6>
+                        <span class="copy--primery">Próximo evento</span>- Dia 25 de Setembro ás 19h
+                    </h6>
                     <h2><span class="copy--primery">Creative </span> Minds</h2>
                     <button class="btn btn--slide"><span>Saiba mais</span></button>
                 </div>
@@ -54,27 +64,42 @@
     </header>
 
     <main>
-        <section>
-            <ul>
-                <li>
-                    <h3>+ de 500</h3> eventos realizados
-                </li>
-                <li>
-                    <h3>+ de 1.000.000</h3>de ingressos vendidos
-                </li>
-                <li>
-                    <h3>+ de 300</h3> empresas atendidas
-                </li>
-            </ul>
+        <section id="counter">
+          <ul class="container container counter__container">
+            <li>
+              <h3>
+                + de 500
+                <small>
+                  eventos realizados
+                </small>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                + de 1.000.000
+                <small>
+                  de ingressos vendidos
+                </small>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                + de 300
+                <small>
+                  empresas atendidas
+                </small>
+              </h3>
+            </li>
+          </ul>
         </section>
 
-        <section>
-            <div>
-                <img src="./imagens/institutional.jpg" alt="">
+        <section class="container institutional">
+            <img class="institutional__image" src="./imagens/institutional.jpg" alt="Studion institutional">
+            <div class="institutional__copy">
                 <h6>Fazemos o evento acontecer</h6>
                 <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quas. Veniam beatae obcaecati molestias vero unde exercitationem doloremque dolores id tenetur deserunt, minima, expedita debitis commodi distinctio reiciendis error cupiditate.</p>
-                <button>Saiba</button>
+                <button class="btn btn--institutional">Saiba mais</button>
             </div>
         </section>
 
