@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Studion</title>
 </head>
 <body>
-    <nav>
-        <h1>Studi<Span>on</Span> <span>Eventos</span></h1>
-        <ul>
+    <nav class="navbar">
+        <h1 class="logo-studion">
+            Studi<Span class="copy--primery">on</Span> <span class="logo-studion__subtitle">Eventos</span></h1>
+        <ul class="navbar__links">
             <li>
                 <a href="#empresa">
                 Empresa
@@ -41,9 +43,12 @@
     <header>
         <div id="slider">
             <div class="slide">
-                <h6><span>Próximo evento</span>- Dia 25 de Setembro ás 19h</h6>
-                <h2><span>Creative </span> Minds</h2>
-                <button><span>Saiba mais</span></button>
+                <img class= "slide__background-image"src="./imagens/banner.jpg" alt="Stuion Banner">
+                <div class="slide__copy">
+                    <h6><span class="copy--primery">Próximo evento</span>- Dia 25 de Setembro ás 19h</h6>
+                    <h2><span class="copy--primery">Creative </span> Minds</h2>
+                    <button class="btn btn--slide"><span>Saiba mais</span></button>
+                </div>
             </div>
         </div>
     </header>
@@ -65,7 +70,7 @@
 
         <section>
             <div>
-                <img src="./institutional.jpg" alt="">
+                <img src="./imagens/institutional.jpg" alt="">
                 <h6>Fazemos o evento acontecer</h6>
                 <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quas. Veniam beatae obcaecati molestias vero unde exercitationem doloremque dolores id tenetur deserunt, minima, expedita debitis commodi distinctio reiciendis error cupiditate.</p>
