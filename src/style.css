@@ -7,7 +7,7 @@
 :root {
   font-family: 'Montserrat', sans-serif; 
   font-size: 16px;
-  --color-primery: #ff5400;
+  --color-primary: #ff5400;
   --color-copy:#333 
   --default-padding: 1rem;
   color: var(--color-copy)
@@ -72,7 +72,7 @@ ul{
     }
 
 .navbar__links a:hover {
-    color: var(--color-primery);
+    color: var(--color-primary);
 }
 
 .logo-studion {
@@ -88,8 +88,8 @@ ul{
     font-weight: 300;
     }
 
-.copy--primery{
-    color: var(--color-primery);
+.copy--primary{
+    color: var(--color-primary);
 }
 
 #slider {
@@ -152,13 +152,13 @@ ul{
 .btn:active, 
 .btn:focus,
 .btn--institutional {
-    border-color: var(--color-primery);
-    background-color: var(--color-primery);
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
     color: #f6f6f6
 }
 
 #counter {
-    background-color:var(--color-primery);
+    background-color:var(--color-primary);
     color: #f6f6f6 ;
     text-transform: uppercase;
 }
@@ -220,4 +220,55 @@ ul{
     color: var(--color-copy);
     background: unset;
     box-shadow: 0 1rem 1rem #000814
+}
+
+.quote{
+    background-image: url(./imagens/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote__container{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy{
+    background-color: #f6f6f6;
+    padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .9375rem;
+    letter-spacing: .1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch;
+    margin: 0%;
+}
+
+.quote__copy h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -.1875rem;
+    margin: 1.875rem 0;
+
+}
+
+.quote__copy h2 span{
+    display: block;
+}
+
+.btn--quote {
+    color:var(--color-copy);
+    border-color:var(--color-copy);
+    background-color:unset;
+
+
 }
