@@ -24,17 +24,17 @@
 }
 
 .contact__info span {
+  font-family: "roboto";
   display: grid;
   grid-template-columns: 1.5rem auto;
   gap: 0.625rem;
   align-items: center;
-  font-family: "Roboto";
   font-weight: 700;
   line-height: 1.6875rem;
 }
 
 .contact__info__container,
-.contact__form__container {
+.contact__info__container {
   width: 540px;
 }
 
@@ -67,7 +67,7 @@
   padding: 0.5rem 0;
   background: unset;
   border: unset;
-  border-bottom: 0.06rem solid #fff;
+  border-bottom: 0.016rem solid#fff;
   color: #fff;
   font-size: 1.5rem;
 }
