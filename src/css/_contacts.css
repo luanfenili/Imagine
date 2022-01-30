@@ -33,11 +33,6 @@
   line-height: 1.6875rem;
 }
 
-.contact__info__container,
-.contact__form__container {
-  width: 540px;
-}
-
 .contact__info__container {
   float: right;
   padding-right: 7.125rem;
